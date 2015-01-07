@@ -31,8 +31,8 @@ describe Item do
   end
 
   describe "Methods" do
-    it "should be able to restock" do
-      result = @item.restock 5
+    it "should be able to stock" do
+      result = @item.stock 5
       expect(result).to eq(true)
       expect(@item.quantity).to eq(5)
     end
