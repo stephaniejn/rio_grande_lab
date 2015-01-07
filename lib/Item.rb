@@ -20,5 +20,6 @@ class Item
 
     def restock amount
         @quantity += amount
+        true
     end
 end
