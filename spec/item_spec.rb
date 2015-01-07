@@ -23,6 +23,14 @@ describe Item do
     it "should be able to get quantity" do
       expect(@item.quantity).to eq(0)
     end
+    it "should be able to get and set name" do
+      @item.name="New Name"
+      expect(@item.name).to eq("New Name")
+    end   
+    it "should be able to get and set price" do
+      @item.price=44.99
+      expect(@item.price).to eq(44.99)
+    end   
     it "should be able to get and set description" do
       expect(@item.description).to eq("")
       @item.description="test"
