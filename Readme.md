@@ -22,11 +22,7 @@ Every class should have tests for all of the following:
     * Check that it behaves as expected
 * any other expected behaviors
 
-To run tests use the command:
-
-```
-rspec
-```
+To run tests use the `rspec` command
 
 ###Interactive Console
 

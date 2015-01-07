@@ -8,8 +8,8 @@ describe Bluray do
   end
 
   #check inilization
-  #check that it is an instance of Item
-  #check that it is an instance of sub class
+  #check that it is an extended from Item
+  #check that it is an instance of Bluray
   #check getters and setters
 
 end
