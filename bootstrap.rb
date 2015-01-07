@@ -10,11 +10,27 @@ require './lib/Song'
 
 # Usage Example (in terminal)
 #
-# irb
-# require './bootstrap.rb'
-# b = new Book "name",1.99
-# b.name
-# b.quantity
-# b.sell 2
-# b.restock 2
-# b.sell 2
+# # irb
+# # require './bootstrap.rb'
+# # i = Item.new "item name",1.99
+
+# # i.name
+# output: item name
+
+# # i.quantity
+# output: 0
+
+# # i.sell 2
+# output: false
+
+# # i.stock 2
+# output: true
+
+# # i.quantity
+# output: 2
+
+# # i.sell 2
+# output: true
+
+# # i.quantity
+# output: 0

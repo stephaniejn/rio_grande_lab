@@ -1,4 +1,3 @@
-
 #Rio Grande
 
 Rio Grande is an online retailer founded by Jerome Basile and named after his favorite river. It started out selling books, but now they sells all sorts of things. They need your OOP / TDD skills to help them create classes for all the different types of items in their online store.
@@ -22,6 +21,45 @@ Every class should have tests for all of the following:
     * Check return value
     * Check that it behaves as expected
 * any other expected behaviors
+
+To run tests use the command:
+
+```
+rspec
+```
+
+###Interactive Console
+
+You can also test things manually in the console using `irb` or `pry` by using `require` to load a class. To make this easier we've included a file called `bootstrap.rb` which loads all of the models.
+
+**Usage Example**
+
+```
+# irb
+# require './bootstrap.rb'
+# i = Item.new "item name",1.99
+
+# i.name
+output: item name
+
+# i.quantity
+output: 0
+
+# i.sell 2
+output: false
+
+# i.stock 2
+output: true
+
+# i.quantity
+output: 2
+
+# i.sell 2
+output: true
+
+# i.quantity
+output: 0
+```
 
 
 
