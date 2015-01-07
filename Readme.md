@@ -28,7 +28,7 @@ To run tests use the `rspec` command
 
 You can also test things manually in the console using `irb` or `pry` by using `require` to load a class. To make this easier we've included a file called `bootstrap.rb` which loads all of the models.
 
-**Usage Example**
+**Usage Example (in terminal)**
 
 ```
 # irb
