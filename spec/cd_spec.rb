@@ -5,7 +5,7 @@ describe Cd do
 
   before(:context) do
     #initlize item
-    @cd = Cd.new("Harry Potter Soundtrack", 15.99)
+    @cd = Cd.new("Harry Potter Soundtrack", 15.99, 1)
   end
 
   describe "Inilization" do
@@ -45,7 +45,7 @@ end
   end  
 
   it "should be able to get and set weight" do
-    expect(@cd.weight).to eq(0)
+    expect(@cd.weight).to eq(1)
     @cd.weight=1
     expect(@cd.weight).to eq 1
   end 

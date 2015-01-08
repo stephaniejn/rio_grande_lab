@@ -5,7 +5,7 @@ describe Movie do
 
   before(:context) do
     #initlize item
-    @movie = Movie.new("Singing in the Rain", 5.99)
+    @movie = Movie.new("Singing in the Rain", 5.99, 10)
   end
 
   describe "Inilization" do
@@ -38,7 +38,7 @@ end
     expect(@movie.price).to eq(10.99)
   end  
   it "should be able to get and set download_size" do
-    expect(@movie.download_size).to eq(0)
+    expect(@movie.download_size).to eq(10)
     @movie.download_size=10
     expect(@movie.download_size).to eq 10
   end 

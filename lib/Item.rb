@@ -1,6 +1,8 @@
 class Item
-    attr_reader :quantity, :ship_price_per_oz
+    attr_reader :quantity
     attr_accessor :name, :price, :description, :weight
+
+    @@ship_price_per_oz=1.2
 
     def initialize name, price, weight = 0
         @name = name
@@ -8,7 +10,6 @@ class Item
         @weight = weight
         @quantity = 0
         @description = ""
-        @ship_price_per_oz=1.2
     end
 
     def sell amount
@@ -30,9 +31,13 @@ class Item
         true
     end
 
+    def ship_price_per_oz
+        @@ship_price_per_oz
+    end
+
     def ship_price 
         if weight >= 0
-            weight * @ship_price_per_oz
+            weight * @@ship_price_per_oz
         else 
             false
         end
