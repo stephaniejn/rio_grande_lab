@@ -1,1 +1,14 @@
-# You are on your own... good luck.
+require_relative 'DigitalItem.rb'
+class Movie < DigitalItem
+
+  attr_accessor :run_time, :director, :producer, :download_size, :weight
+
+  def initialize name, price, download_size = 0
+    super(name,price,weight)
+    @download_size = download_size
+    @run_time = ""
+    @director = ""
+    @producer = ""
+  end
+
+end
